@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #007bff, #4a63ff);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+header a {
+  color: white;
+  margin-left: 15px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header a:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.product-card .price {
+  color: #007bff;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.product-card .actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.product-card .actions button,
+.product-card .actions a {
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn {
+  background: #28a745;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #23943e;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c72b39;
+}
+
+.detail-btn {
+  background: #007bff;
+  color: white;
+}
+
+.detail-btn:hover {
+  background: #0056d6;
+}
+
+form {
+  max-width: 650px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+form h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.2);
+}
+
+form button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #007bff, #4a63ff);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+
+.search-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.search-filter input,
+.search-filter select {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.search-filter input:focus,
+.search-filter select:focus {
+  border-color: #007bff;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.pagination button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pagination button:hover {
+  background: #0056c9;
+}
+
+.pagination .active {
+  background: #4a63ff;
+}
+
+.pagination-info {
+  text-align: center;
+  margin-top: 10px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #fff;
+  color: #777;
+  border-top: 1px solid #ddd;
+  margin-top: 50px;
+}
